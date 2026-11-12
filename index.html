@@ -4,19 +4,36 @@
     <title>Jasmine Smith's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasmine J. Smith" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
+<header>
+    <nav aria-label="Main navigation">
+        <ul>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Connect</a>
+        </ul>
+    </nav>
+</header>
 
+<main>
   <body>
     <section>
-      <h1>Jasmine Smith</h1>
-      <p>Graphic & Web Designer</p>
+      <h1 class="mybranding">Jasmine Smith</h1>
+      <h2>Graphic & Web Designer</h2>
     </section>
 
-    <section id="About">
+    <section id="about">
       <h2>About</h2>
       <p>
-        Child of God. Wife. Mother. Daughter. Friend. I'm a blessed individual
-        with a passion for the arts and community. Growing up on the east side
+        Child of God. Wife. Mother. Daughter. Friend. Creative Problem Solver. <br>
+        I'm a blessed individual with a passion for the arts and community. Growing up on the east side
         of Detroit, I learned the importance of family, friendship, and the
         power of community. Integrity was one of the most valuable lessons
         instilled in me during those early years, and it's a principle I
@@ -24,25 +41,64 @@
       </p>
     </section>
 
-    <section id="Experience">
+    <section id="experience">
       <h2>Experience</h2>
       <ul>
-        <li>Graphic Designer - Freelance</li>
-        <li>HTML, CSS & JavaScript - Code The Dream</li>
-        <li>Visual Artist - City Of Detroit</li>
+        <li>
+            <div class="jobs">
+              <h3>Graphic Designer - Freelance</h3>
+              <span>2011 - Present</span> 
+            </div>
+             <p>
+                Create branding, marketing materials,
+                and digital designs for businesses.
+            </p>
+            
+          </li>
+
+        <li>
+            <div class="jobs">
+              <h3>Salesforce Adminstrator - Cosultant</h3>
+              <span>2018 - Present</span>
+            </div> 
+            <p>
+                Customize Salesforce solutions, manage
+                data, and provide user support.
+            </p>
+          
+          </li>
+        <li>
+          <div class="jobs">
+            <h3>HTML, CSS & JavaScript - Code The Dream</h3>
+            <span>Oct 2026 - Present</span>
+          </div> 
+          <p>
+                Learning HTML, CSS, and JavaScript to
+                build interactive websites.
+            </p>
+         </li>
       </ul>
     </section>
 
-    <section id="Connect">
+    <section id="connect">
       <h2>Connect</h2>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/jasmine-hollis/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/jjerrellcodes">GitHub</a>
+      <div class="social-links">
+
+          <a href="https://www.linkedin.com/" 
+             target="_blank"
+             aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+          </a>
+        
+          <a href="https://github.com/jjerrellcodes"
+             target="_blank"
+             aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
         </li>
       </ul>
+      </div>
     </section>
   </body>
+  </main>
 </html>

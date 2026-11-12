@@ -1,0 +1,133 @@
+/* //////////////////////////// MY BRANDING STYLE ///////////////////////////*/
+
+.mybranding {
+  font-family: "Oswald", sans-serif;
+  color: #d5e83f;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: -10px;
+}
+
+main {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* /////////////////////// HEADINGS & BODY //////////////////////////////// */
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #29bfc1;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #7138b6;
+  color: rgb(237, 231, 220);
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* /////////////////////////////// ABOUT ///////////////////////////////// */
+
+#about {
+  text-align: justify;
+}
+#about p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* //////////////////////// EXPERIENCE ////////////////////////////////// */
+
+#experience {
+  text-align: left;
+}
+#experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+#experience li {
+  background-color: transparent;
+  color: white;
+  border-left: 5px solid #d5e83f;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+
+#experience li p {
+  margin-top: 10px;
+}
+
+.jobs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.jobs h3 {
+  margin: 0;
+}
+
+span {
+  color: #d5e83f;
+}
+/* //////////////////////// CONNECT ///////////////////////////////// */
+
+#connect {
+  text-align: center;
+}
+#connect h2 {
+  margin-top: 100px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+#connect a {
+  color: #29bfc1;
+  font-size: 30px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#connect a:hover {
+  color: #d5e83f;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+/* //////////////////////// NAVAGATION BAR ////////////////////////// */
+
+nav {
+  padding: 30px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #29bfc1;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d5e83f;
+}
