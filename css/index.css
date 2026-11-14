@@ -18,6 +18,27 @@ main {
   padding: 20px;
 }
 
+/* //////////////////////// NAVAGATION BAR ////////////////////////// */
+
+nav {
+  padding: 30px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #29bfc1;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d5e83f;
+}
+
 /* /////////////////////// HEADINGS & BODY //////////////////////////////// */
 
 h2 {
@@ -57,6 +78,14 @@ body {
   padding: 0;
 }
 
+/* #experience li {
+  background-color: transparent;
+  color: white;
+  border-left: 5px solid #d5e83f;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+} */
+
 #experience li {
   background-color: transparent;
   color: white;
@@ -83,6 +112,32 @@ body {
 span {
   color: #d5e83f;
 }
+
+/* /////////////////////////// SKILLS ///////////////////////////////// */
+
+#skills {
+  margin-top: 50px;
+}
+
+#skills ul {
+  display: flex;
+  line-height: 2;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-decoration-color: #d5e83f;
+  text-underline-offset: 6px;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* /////////////////////////// PROJECTS ///////////////////////////////// */
+
+#projects {
+  margin-top: 50px;
+}
+
 /* //////////////////////// CONNECT ///////////////////////////////// */
 
 #connect {
@@ -110,24 +165,10 @@ span {
   align-items: center;
   gap: 2px;
 }
+/* ///////////////////////// FOOTER ////////////////////////////////// */
 
-/* //////////////////////// NAVAGATION BAR ////////////////////////// */
-
-nav {
-  padding: 30px 0;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #29bfc1;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #d5e83f;
+footer {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
 }
