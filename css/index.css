@@ -15,7 +15,7 @@
 main {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 450px; /* Gives the browser extra scrolling space for anchor navigation. */
 }
 
 /* //////////////////////// NAVAGATION BAR ////////////////////////// */
@@ -62,6 +62,8 @@ body {
 
 #about {
   text-align: justify;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 #about p {
   text-align: justify;
@@ -73,18 +75,11 @@ body {
 #experience {
   text-align: left;
 }
+
 #experience ul {
   list-style: none;
   padding: 0;
 }
-
-/* #experience li {
-  background-color: transparent;
-  color: white;
-  border-left: 5px solid #d5e83f;
-  padding: 12px 20px;
-  margin-bottom: 15px;
-} */
 
 #experience li {
   background-color: transparent;
@@ -116,9 +111,10 @@ span {
 /* /////////////////////////// SKILLS ///////////////////////////////// */
 
 #skills {
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
+/* Styles Skills with Underlin */
 #skills ul {
   display: flex;
   line-height: 2;
@@ -135,24 +131,27 @@ span {
 /* /////////////////////////// PROJECTS ///////////////////////////////// */
 
 #projects {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 /* //////////////////////// CONNECT ///////////////////////////////// */
 
 #connect {
-  text-align: center;
+  margin-top: 60px;
+  text-align: left;
 }
+
 #connect h2 {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-right: 20px;
-  font-size: 25px;
+  font-size: 22px;
 }
 #connect a {
   color: #29bfc1;
   font-size: 30px;
   margin-right: 20px;
   text-decoration: none;
+  margin-bottom: 30px;
 }
 
 #connect a:hover {
@@ -161,10 +160,83 @@ span {
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 2px;
 }
+
+/* //////////////////////////////////// MESSAGE FORM & MESSAGES/////////////////////////////////////////////// */
+
+/* Stacks form vertically and adds space between lines */
+form[name="leave_message"] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 50%;
+  margin-bottom: 60px;
+}
+
+/* Adds space inside the input fields in addition to rounding the corners of the boxes */
+form[name="leave_message"] input,
+form[name="leave_message"] textarea {
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Styles the "Submit" button with background and text colors, in addition to spacing and adds a pointer cursor */
+button[type="submit"] {
+  background-color: #29bfc1;
+  color: #7138b6;
+  padding: 12px 20px;
+  min-height: 44px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* Changes background color of submit button on hover */
+button[type="submit"]:hover {
+  background-color: #d5e83f;
+}
+
+/* Styling of "Remove" button */
+#messages button[type="button"] {
+  background-color: #29bfc1;
+  padding: 6px 12px;
+  min-height: 32px;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Changes "Remove" button background color on hover */
+#messages button[type="button"]:hover {
+  background-color: #d5e83f;
+  color: #7138b6;
+}
+
+/* Remove bullets from messages */
+#messages ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Change mailto link color */
+#messages a {
+  color: #29bfc1;
+  text-decoration: none;
+}
+
+/* Change mailto link color on hover */
+#messages a:hover {
+  color: #d5e83f;
+  text-decoration: underline;
+}
+
 /* ///////////////////////// FOOTER ////////////////////////////////// */
 
 footer {
