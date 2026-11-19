@@ -4,7 +4,7 @@ body.appendChild(footer);
 
 const today = new Date();
 
-let thisYear = today.getFullYear();
+const thisYear = today.getFullYear();
 
 const copyright = document.createElement("p");
 copyright.innerHTML = `\u00A9 Jasmine Smith, ${thisYear}`;
