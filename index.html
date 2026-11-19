@@ -26,6 +26,7 @@
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#connect">Connect</a>
+          <a href="#leaveMessage">Leave A Message</a>
         </ul>
       </nav>
     </header>
@@ -115,42 +116,36 @@
           </a>
         </div>
       </section>
-    
-    <section>
-      <h2 id="leaveMessage">Leave Message</h2>
-      <form name="leave_message">
-        <label for="usersName">Name:</label>
-        <input type="text" id="usersName" name="usersName" required="true" />
 
-        <label for="usersEmail">Email:</label>
-        <input type="email" id="usersEmail" name="usersEmail" required="true" />
+      <section id="leaveMessage">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+          <label for="usersName">Name:</label>
+          <input type="text" id="usersName" name="usersName" required="true" />
 
-        <label for="usersMessage">Message:</label>
-        <textarea
-          id="usersMessage"
-          name="usersMessage"
-          required="true"
-        ></textarea>
+          <label for="usersEmail">Email:</label>
+          <input
+            type="email"
+            id="usersEmail"
+            name="usersEmail"
+            required="true"
+          />
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    <section id="messages">
-      <h2>Messages</h2>
-      <ul></ul>
-    </section>
-  </main>
-  <script src="js/index.js"></script>
-   
+          <label for="usersMessage">Message:</label>
+          <textarea
+            id="usersMessage"
+            name="usersMessage"
+            required="true"
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
-
-<!-- <nav aria-label="Main navigation">
-        <ul>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#connect">Connect</a>
-        </ul>
-      </nav> -->

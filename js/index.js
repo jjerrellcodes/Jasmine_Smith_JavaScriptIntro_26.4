@@ -26,6 +26,8 @@ let messageForm = document.querySelector('[name="leave_message"]');
 
 messageForm.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  
   const name = event.target.usersName.value;
   const email = event.target.usersEmail.value;
   const message = event.target.usersMessage.value;
@@ -33,6 +35,7 @@ messageForm.addEventListener("submit", function (event) {
 
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.querySelector("ul");
+
   const newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>
   <span>${message}</span>`;
@@ -46,6 +49,6 @@ messageForm.addEventListener("submit", function (event) {
     entry.remove();
   });
   newMessage.appendChild(removeButton);
-  messageList.appendChild(newMessage);
-  messageForm.reset();
+  messageList.appendChild(newMessage); 
+  messageForm.reset(); // Clears out data in form
 });
